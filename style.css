@@ -65,8 +65,7 @@ body{
 
 
 .menu li:hover{
-    border-top: 0.2rem solid white;
-    top: 2rem;
+    border-top: 0.2rem solid rgb(255, 255, 255);
 }
 
 
@@ -87,12 +86,39 @@ body{
 }
 
 
+#galeries{
+    width: 80%;
+    height: 350px;
+    margin-top: 4rem;
+    margin-left: 5rem;
+    box-shadow: 8px 8px 0.4rem rgb(29, 29, 29), -1em 0 .4em rgb(39, 39, 39);
+    border-radius:2%;
+    border-width: 90%;
+}
 
 #galeries h2{
     text-align: center;
+    padding-top: 1.5rem;
 }
 
 .presentation_auberge img{
-    justify-content: center;
+    width: 220px;
+    margin-top: 2rem;
+    border-radius: 20%;
+    margin-left: 13rem;
+
 }
 
+
+#avis h2{
+    text-align: center;
+}
+
+#avis p{
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    width: 20%;
+    border-radius: 20%;
+    border: 2px solid black;
+}
