@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auberge - Auberge de toitoine </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../js/index.js" defer></script>
 </head>
 
 <body>
@@ -14,28 +15,23 @@
         <div class="title">
             <h1>Auberge de toitoine</h1>
         </div>
-        <nav class="menu">
+        <nav id="mySidenav" class="menu">
+            <a id="closeBtn" href="#" class="close">x</a>
             <ul>
-                <a href="#description">
-                    <li>Description</li>
-                </a>
-                <a href="#">
-                    <li>Commander</li>
-                </a>
-                <a href="#galeries">
-                    <li>Galerie</li>
-                </a>
-                <a href="#services">
-                    <li>Services</li>
-                </a>
-                <a href="#avis">
-                    <li>Avis</li>
-                </a>
-                <a href="#">
-                    <li>Contact</li>
-                </a>
+                <li><a href="#description">Description</a></li>
+                <li><a href="#">Commander</a></li>
+                <li><a href="#galeries">Galeries</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#avis">Avis</a></li>
+                <li><a href="#contact">Nous contacter</a></li>
             </ul>
         </nav>
+        <a href="#" id="openBtn">
+            <span class="burger-icon">burger</span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
     </header>
     <main>
         <section id="description">
@@ -67,7 +63,7 @@
             <div class="presentation_auberge">
                 <img src="Pictures/Augerbe1.jpg" alt="Exterieur de l'auberge" />
                 <img src="Pictures/auberge2.jpg" alt="Photo intérieur de l'auberge N°1" />
-                <img src="Pictures/Auberge3.jpg" alt="Pohot intérieur de l'auberge N°2"/>
+                <img src="Pictures/Auberge3.jpg" alt="Pohot intérieur de l'auberge N°2" />
             </div>
         </section>
         <section id="services">
@@ -81,22 +77,28 @@
         </section>
         <section id="avis">
             <h2>Vos avis !</h2>
-            <blockquote>
-                <p>"Un lieu magnifique et paisible, parfait pour se ressourcer. L'accueil est chaleureux, je recommande
-                    !" -Claire Dubois</p>
-            </blockquote>
-            <blockquote>
-                <p>"Excellente cuisine et ambiance conviviale. Idéal pour un week-end en pleine nature !" -Lucas Moreau
-                </p>
-            </blockquote>
-            <blockquote>
-                <p>"Charmante auberge avec un beau jardin, parfait pour un séjour relaxant. À refaire !" -Élise Fontaine
-                </p>
-            </blockquote>
-            <blockquote>
-                <p>"Superbe découverte ! Le personnel est attentionné et les chambres sont très confortables." -Thomas
-                    Lefèvre</p>
-            </blockquote>
+            <div class="description_avis">
+                <blockquote>
+                    <p>"Un lieu magnifique et paisible, parfait pour se ressourcer. L'accueil est chaleureux, je
+                        recommande
+                        !" -Claire Dubois</p>
+                </blockquote>
+                <blockquote>
+                    <p>"Excellente cuisine et ambiance conviviale. Idéal pour un week-end en pleine nature !" -Lucas
+                        Moreau
+                    </p>
+                </blockquote>
+                <blockquote>
+                    <p>"Charmante auberge avec un beau jardin, parfait pour un séjour relaxant. À refaire !" -Élise
+                        Fontaine
+                    </p>
+                </blockquote>
+                <blockquote>
+                    <p>"Superbe découverte ! Le personnel est attentionné et les chambres sont très confortables."
+                        -Thomas
+                        Lefèvre</p>
+                </blockquote>
+            </div>
         </section>
 
         <section id="contact">
